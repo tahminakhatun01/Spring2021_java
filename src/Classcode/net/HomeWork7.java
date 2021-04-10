@@ -90,7 +90,7 @@ public class HomeWork7 {
 
        // reverseSentence3 = split_sentence3 [split_sentence3.length-split_sentence3.length];
 
-        for (int i=1 ; i< split_sentence3.length; i++){
+        for (int i=0 ; i< split_sentence3.length; i++){
 
             reverseSentence3= reverseSentence3+ split_sentence3 [split_sentence3.length-1-i];
         }
