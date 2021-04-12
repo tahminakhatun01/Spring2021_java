@@ -33,23 +33,22 @@ public class HomeWork8 {
          * head --> daeh    (not palindrome)
          */
 
-        String word = "lEvel";
+        String word = "lEvl";
 
-       String isPalindrome = "";  //I need help on this I am not getting it right.
+       String pelindromeWord = "";
        String[]splitWord =word.trim().toLowerCase().split("");
 
-    for (int i=0; i<splitWord.length;i++){
+    for (int i=0; i<splitWord.length;i++) {
 
-        if (isPalindrome==word) {   ///not going in the if statement.
 
-            isPalindrome = isPalindrome + splitWord [splitWord.length -1 -i];
+        pelindromeWord = pelindromeWord + splitWord[splitWord.length - 1 - i];
 
-        }else {
 
-            System.out.println("not palindrome");
-        }
     }
-        System.out.println(isPalindrome);
+        System.out.println(pelindromeWord);
+
+        boolean isPelindrome=word.equalsIgnoreCase(pelindromeWord);
+        System.out.println("is "+word+" a pelindrome: "+ isPelindrome);
 
 
 
